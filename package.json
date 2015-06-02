@@ -2,7 +2,7 @@
   "name": "addheader",
   "version": "0.0.1",
   "description": "Adds a header to all file of a filemask",
-  "main": "index.js",
+  "main": "header.js",
   "scripts": {
     "test": "test"
   },
@@ -14,10 +14,16 @@
     "header",
     "file"
   ],
-  "author": "Sepp Renfer",
+  "author": {
+    "name": "Sepp Renfer",
+    "email": "sepp.renfer@gmail.com"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/sepprenfer/addheader/issues"
   },
-  "homepage": "https://github.com/sepprenfer/addheader#readme"
+  "homepage": "https://github.com/sepprenfer/addheader#readme",
+  "devDependencies": {
+    "glob" : "latest"
+  }
 }
