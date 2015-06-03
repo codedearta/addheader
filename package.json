@@ -1,6 +1,6 @@
 {
   "name": "addheader",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Adds a header to all file of a filemask",
   "main": "addHeader.js",
   "scripts": {
@@ -23,7 +23,7 @@
     "url": "https://github.com/sepprenfer/addheader/issues"
   },
   "homepage": "https://github.com/sepprenfer/addheader#readme",
-  "devDependencies": {
+  "dependencies": {
     "glob" : "latest"
   }
 }
