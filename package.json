@@ -2,7 +2,7 @@
   "name": "addheader",
   "version": "0.0.1",
   "description": "Adds a header to all file of a filemask",
-  "main": "header.js",
+  "main": "addHeader.js",
   "scripts": {
     "test": "test"
   },
