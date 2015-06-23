@@ -1,4 +1,0 @@
-A header
-A header
-A header
-This is a test file.
