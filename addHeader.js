@@ -1,33 +1,22 @@
-var fs = require('fs');
-var glob = require("glob");
+var readline = require('readline');
 
-module.exports = function (fileNameMasks, headerText) {
-    var headerTextl = headerText;
+module.exports = function () {
+    var header = process.argv[2];
+    var isFirstLine = true;
 
-    fileNameMasks.forEach(addHeadersFor);
+    var rl = readline.createInterface({
+      input: process.stdin,
+      terminal: true
+    });
 
-    function addHeadersFor(fileNameMask) {
-        glob(fileNameMask, fileNamesOfMask);
-    }
-
-    function fileNamesOfMask(err, fileNames){
-        if(err) {
-            console.log('file mask error: ', err);
+    rl.on('line', function (instream) {
+        if(isFirstLine) {
+            isFirstLine = false;
+            var outstream = header + instream;
+            console.log(outstream);
         }
-
-        fileNames.forEach(addHeaderFor);
-    }
-
-    function addHeaderFor(fileName) {
-        var fileContent = fs.readFileSync(fileName, 'utf-8');
-
-        if (fileContent) {
-            fs.writeFileSync(fileName, headerTextl + '\r\n' + fileContent);
-        } else {
-            throw 'Error file not found';
+        else {
+            console.log(instream);
         }
-    }
-};
-
-
-
+    });
+}
