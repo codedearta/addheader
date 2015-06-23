@@ -1,8 +1,9 @@
 {
   "name": "addheader",
-  "version": "0.0.1",
+  "version": "0.0.5",
   "description": "Adds a header to all file of a filemask",
   "main": "addHeader.js",
+  "bin": "./addheaderCli.js",
   "scripts": {
     "test": "test"
   },
@@ -23,7 +24,7 @@
     "url": "https://github.com/sepprenfer/addheader/issues"
   },
   "homepage": "https://github.com/sepprenfer/addheader#readme",
-  "devDependencies": {
+  "dependencies": {
     "glob" : "latest"
   }
 }
