@@ -1,6 +1,6 @@
 {
   "name": "addheader",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Adds a header to all file of a filemask",
   "main": "addHeader.js",
   "bin": "./addheaderCli.js",
